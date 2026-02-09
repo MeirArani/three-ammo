@@ -14,7 +14,7 @@ import { DefaultBufferSize } from "ammo-debug-drawer";
 import { createCollisionShapes } from "three-to-ammo";
 
 import Ammo from "ammo.js/builds/ammo.wasm.js";
-import AmmoWasm from "ammo.js/builds/ammo.wasm.wasm";
+import AmmoWasm from "ammo.js/builds/ammo.wasm.wasm?url";
 
 function initializeWasm(wasmUrl) {
   return Ammo.bind(undefined, {
