@@ -11,7 +11,7 @@ import Body from "./body";
 import Constraint from "./constraint";
 import { DefaultBufferSize } from "ammo-debug-drawer";
 
-import { createCollisionShapes } from "three-to-ammo";
+import { createCollisionShapes } from "@c-frame/three-to-ammo";
 
 import Ammo from "ammo.js/builds/ammo.wasm.js";
 import AmmoWasm from "ammo.js/builds/ammo.wasm.wasm?url";

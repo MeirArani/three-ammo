@@ -1,11 +1,11 @@
-import CONSTANTS from "../constants"
+import CONSTANTS from "../constants";
 import Body from "../src/body";
 import World from "../src/world";
 import Constraint from "../src/constraint";
 const TYPE = CONSTANTS.TYPE,
   CONSTRAINT = CONSTANTS.CONSTRAINT,
   ACTIVATION_STATE = CONSTANTS.ACTIVATION_STATE;
-import { createBoxShape, createSphereShape, iterateGeometries } from "three-to-ammo";
+import { createBoxShape, createSphereShape, iterateGeometries } from "@c-frame/three-to-ammo";
 import { AmmoDebugConstants, DefaultBufferSize } from "ammo-debug-drawer";
 
 import Ammo from "ammo.js/builds/ammo.wasm.js";

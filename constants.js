@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   GRAVITY: -9.8,
   MAX_INTERVAL: 4 / 60,
   ITERATIONS: 10,

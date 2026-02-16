@@ -3,7 +3,7 @@ import World from "../src/world";
 import Body from "../src/body";
 const TYPE = CONSTANTS.TYPE,
   FIT = CONSTANTS.FIT;
-import { createBoxShape, createSphereShape, iterateGeometries } from "three-to-ammo";
+import { createBoxShape, createSphereShape, iterateGeometries } from "@c-frame/three-to-ammo";
 import { AmmoDebugConstants, DefaultBufferSize } from "ammo-debug-drawer";
 import Stats from "stats.js";
 

@@ -8,27 +8,43 @@
   "bugs": {
     "url": "https://github.com/infinitelee/three-ammo/issues"
   },
-  "main": "index.js",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/three-ammo.umd.cjs",
+  "module": "./dist/three-ammo.js",
+  "exports": {
+    ".": {
+      "import": "./dist/three-ammo.js",
+      "require": "./dist/three-ammo.js"
+    }
+  },
   "repository": "infinitelee/three-ammo",
   "scripts": {
     "dev": "webpack-dev-server --mode=development",
-    "build": "rimraf ./dist && webpack --mode=production"
+    "build": "rimraf ./dist && webpack --mode=production",
+    "knip": "knip"
   },
   "peerDependencies": {
     "ammo.js": "*",
     "three": "*"
   },
   "devDependencies": {
+    "@c-frame/three-to-ammo": "^1.0.0",
+    "@types/node": "^25.2.3",
     "ammo-debug-drawer": "github:infinitelee/ammo-debug-drawer",
     "ammo.js": "github:mozillareality/ammo.js#hubs/master",
     "eslint": "^6.7.2",
     "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-prettier": "^3.1.1",
     "file-loader": "^5.0.2",
+    "knip": "^5.83.1",
     "prettier": "^1.19.1",
     "stats.js": "^0.17.0",
     "three": "github:mozillareality/three.js#hubs-patches",
-    "three-to-ammo": "github:infinitelee/three-to-ammo",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.3",

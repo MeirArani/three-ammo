@@ -2,9 +2,11 @@ import "three";
 import constants from "./constants";
 import ammoWorker from "./src/ammo.worker";
 export const CONSTANTS = constants;
-export const AmmoWorker = ammoWorker;
+export const AmmoWorker = new Worker(new URL("./src/ammo.worker", import.meta.url), {
+  type: "module"
+});
 
-import { iterateGeometries } from "three-to-ammo";
+import { iterateGeometries } from "@c-frame/three-to-ammo";
 const MESSAGE_TYPES = CONSTANTS.MESSAGE_TYPES;
 
 export const WorkerHelpers = function(ammoWorker) {
