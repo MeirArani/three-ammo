@@ -1,12 +1,37 @@
 {
   "compilerOptions": {
-    "target": "es2022",
-    "module": "es2022",
-    "moduleResolution": "node",
+    // Standard
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "allowJs": true,
-    "outDir": "./dist"
+    "target": "esnext",
+    "module": "esnext",
+    "allowJs": false,
+    "resolveJsonModule": true,
+    "moduleDetection": "auto",
+    "moduleResolution": "bundler",
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "outDir": "dist",
+    "rootDir": ".",
+    "experimentalDecorators": true,
+
+    // Strictness
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    // Library (Monorepo)
+    "declaration": true,
+    "composite": true,
+    "sourceMap": true,
+    "declarationMap": true,
+
+    "typeRoots": [
+      "./types",
+      "./node_modules/@types",
+      "../../node_modules/@types"
+    ]
   },
-  "include": ["src", "index.js"]
+  "include": ["./src/**/*", "./index.ts", "./types/*.d.ts"]
 }
