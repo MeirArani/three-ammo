@@ -1,5 +1,4 @@
 import type { AmmoMessage } from "./src/workers/ammo.worker";
-import "three";
 
 export interface AmmoWorker extends Omit<Worker, "postMessage"> {
   postMessage: (msg: AmmoMessage, transfer?: Transferable[]) => void;
